@@ -8,35 +8,14 @@ They have collected data on population, GDP, and various types of energy consump
 
 Using this data, they want to develop a model that can classify countries into developed and developing countries and then cluster them based on their renewable and non-renewable energy usage patterns. This will allow them to identify which countries are in line with their goals and enact the relevant tariffs/grants accordingly.
 
-__**Outline of machine learning process:**__
+__Stance of the United Nations__
 
-**1st  : Data cleaning and preprocessing**
+United Nations (UN) has been actively working towards reducing non-renewable energy and fossil fuel usage, as part of its efforts to mitigate climate change and promote sustainable development. The UN has set various targets and initiatives to promote the use of renewable energy sources and reduce dependence on fossil fuels.
 
-- Remove countries that no longer exist (Czechoslovakia etc.) - use list of current countries to compare and remove
-- From given dataset:
-    - gdp and population: find the earliest year where both data are available for ALL countries
-    - electricity_demand, energy_cons_change_pct: other economic indicators that can be used to predict
-- Import other datasets: Human Development Index (HDI)
+For example, the UN's 2030 Agenda for Sustainable Development includes a goal to ensure access to affordable, reliable, sustainable, and modern energy for all (Goal 7). This goal includes targets to increase the share of renewable energy in the global energy mix and improve energy efficiency.
 
-**2nd : Classify into developed and developing countries (latest year is used: 2021)**
+Additionally, the UN Framework Convention on Climate Change (UNFCCC) is an international treaty aimed at mitigating greenhouse gas emissions and addressing climate change. The UNFCCC includes various mechanisms, such as the Kyoto Protocol and the Paris Agreement, which aim to reduce greenhouse gas emissions from various sectors, including energy production.
 
-__Note : Classification of developed and developing countries cannot be limited to a single indicator and we use around 3-4 metrics as determinants__
+Regarding nuclear energy, the UN's stance is more nuanced. While the organization recognizes the potential benefits of nuclear energy in terms of energy security, reducing greenhouse gas emissions, and improving access to energy, it also acknowledges the potential risks associated with nuclear technology, such as accidents and the disposal of nuclear waste.
 
-- from dataset: GDP, population, energy consumption per capita (% change), 
-- from other datasets: human development index
-
-**3rd** : in each classification, compare their trends of non-renewable and renewable energy (then get data points based on the trends)
-
-**4th** : cluster into different degrees of non-renewable and renewable energy (using datapoints from 2nd - in terms of boundary, need to be able to rationalise the boundary itself)
-
-**5th** : extra stuff
-- net_elec_imports_share_demand : can identify which countries more reliant on electricity imports and tax them accordingly
-
-Clustering:
-- Use an unsupervised machine learning algorithm such as K-Means, DBSCAN, or Hierarchical clustering to group the countries into clusters based on their energy usage patterns.
-- Choose the number of clusters that provide the most meaningful and interpretable insights.
-
-Classification:
-- Use a supervised machine learning algorithm such as Logistic Regression, Random Forest, or Gradient Boosting to train a model to predict which countries are likely to transition into a renewable energy future.
-- Use the clustered groups as labels to classify the countries into one of the groups.
-- Evaluate the performance of the model using cross-validation and various metrics such as accuracy, precision, and recall.
+Therefore, the UN's approach to nuclear energy is to promote its safe and secure use while ensuring that it does not detract from the development of renewable energy sources. The UN also recognizes the need for greater transparency and international cooperation in nuclear energy-related issues.
