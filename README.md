@@ -1,6 +1,6 @@
 # MS0003 Mini Project - World Energy Usage
 
-The United Nations is looking to reduce carbon footprint of countries and minimize their reliance on non-renewable energy sources. In the wake of the COVID-19 pandemic, there has been a surge in usage of non-renewable energy in various countries following the relaxation of quarantine procedures.
+The United Nations is looking to reduce carbon footprint of countries and minimize their reliance on non-renewable energy sources. In recent times, there has been a surge in usage of non-renewable energy in various countries following the relaxation of quarantine procedures.
 
 The data science department has been tasked to identify countries that have been using non-renewable energy beyond a certain benchmark to fuel their development and determine how to regulate non-renewable energy usage through tariffs and grants to support renewable energy usage.
 
@@ -16,10 +16,6 @@ For example, the UN's 2030 Agenda for Sustainable Development includes a goal to
 
 Additionally, the UN Framework Convention on Climate Change (UNFCCC) is an international treaty aimed at mitigating greenhouse gas emissions and addressing climate change. The UNFCCC includes various mechanisms, such as the Kyoto Protocol and the Paris Agreement, which aim to reduce greenhouse gas emissions from various sectors, including energy production.
 
-Regarding nuclear energy, the UN's stance is more nuanced. While the organization recognizes the potential benefits of nuclear energy in terms of energy security, reducing greenhouse gas emissions, and improving access to energy, it also acknowledges the potential risks associated with nuclear technology, such as accidents and the disposal of nuclear waste.
-
-Therefore, the UN's approach to nuclear energy is to promote its safe and secure use while ensuring that it does not detract from the development of renewable energy sources. The UN also recognizes the need for greater transparency and international cooperation in nuclear energy-related issues.
-
 __Machine Learning Approach__
 
 Clustering countries into developing and developed countries first is a way to group countries based on their socio-economic indicators and level of development. This can be a useful step before clustering countries based on their fossil fuel to renewable energy usage because countries that are at different stages of development may have different priorities, policies, and approaches to energy use.
@@ -31,11 +27,21 @@ The criteria used to classify countries as developing or developed may vary depe
 
 __Problems encountered__
 Data Cleaning
-- Not all countries has GDP values
+- Not sure whether to extrapolate or don't use that column for comparison
+
 - Some countries don't have all the data in some years - e.g. Micronesia data stops at 2019
 
+- Some countries like Iceland have missing data in 2021 which I dropped, is it reasonable to do so?
+
+
 Binary Clustering (developed or developing countries) - identify relevant year, add HDI as metrics
-- Different years have different missing data - hard to select a specific year to do our clustering so for now, we used the data from different years to concatenate into 1 dataframe
+
+- Different years have different missing data - hard to select a specific year to do our clustering so we took 2021 as a reference year but it still contains some data that we are not sure whether to extrapolate or drop them
+
 - Is it better to just take the clustering of developed or developing countries from readily available datasets online?
+
+- Even external data has missing data for some countries so we used older years (i.e. 2018)
+
+
 
 Clustering - cluster based on ____ to see how to tackle each cluster (taxing them or just giving them grants etc.)
