@@ -27,21 +27,22 @@ The criteria used to classify countries as developing or developed may vary depe
 
 __Problems encountered__
 Data Cleaning
-- Not sure whether to extrapolate or don't use that column for comparison
 
-- Some countries don't have all the data in some years - e.g. Micronesia data stops at 2019
+- Reasonable to take percentage-base values rather than absolute values (terawatt-hours etc.)?
 
-- Some countries like Iceland have missing data in 2021 which I dropped, is it reasonable to do so?
+- Extrapolate or don't use that column for comparison? What's a reasonable threshold?
 
+- Some countries don't have all the data in some years or missing data - e.g. Micronesia data stops at 2019 - remove them?
 
 Binary Clustering (developed or developing countries) - identify relevant year, add HDI as metrics
 
-- Different years have different missing data - hard to select a specific year to do our clustering so we took 2021 as a reference year but it still contains some data that we are not sure whether to extrapolate or drop them
+- Different years have different missing data - hard to select a specific year to do our clustering so we took 2018 as a reference year but it still has some missing data that we are not sure whether to extrapolate or drop them
 
-- Is it better to just take the clustering of developed or developing countries from readily available datasets online?
+- Is it better to just take pre-classified data for developed or developing countries from readily available datasets online?
 
 - Even external data has missing data for some countries so we used older years (i.e. 2018)
-
-
+    - In addition, how much should we utilise external data before it seems like we are not even using original data
+        - Idea was for binary clustering, create from external dataset
+        - From that, in each cluster, use original dataset (but will encounter the problem of missing data again)
 
 Clustering - cluster based on ____ to see how to tackle each cluster (taxing them or just giving them grants etc.)
