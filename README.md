@@ -1,5 +1,50 @@
 # MS0003 Mini Project - World Energy Usage
 
+__Feedback__
+- Animation for choropleth for trend across the year to show what we have done so far
+    - For story-telling -> Magnitude of the problem (which countries have more emissions)
+    - Take the role of an advisor
+
+- From renewable enrgy trend - SA leading the trend for renewables
+    - Policies that make them do it right
+    - Something that UN can implement for other nation
+
+- Shared Socioeconomic Pathway
+    - ARIMA model - forecast for 50 (continent data - explain why we did not use country data)
+    - ARIMA - time-forecast, SARIMA - seasonal-forecast
+    - Most likely to hit or not hit the target?
+    - Drop 2020 cause black swan
+    - Show auto-regression plot
+
+- What can we do from the lessons learnt above^?
+    - Such as adopt policies from
+
+__New Flow__
+
+1. Data Cleaning
+    - Remove columns - don't use specific energy types (coal, gas, nuclear)
+    - Use continent data for time-series forecasting
+        - countries always change (e.g. Venezuela)
+        - use renewable_energy_per_capita / fossiL_energy_per_capita
+
+2. EDA
+    - show renewable enrgy trend across CONTINENTS (can show fossil_cons_change_pct AND greenhouse gas emissions)
+        - show via choropleth
+    - explain that SA is leading the renewable energy
+        - trend for south american countries (renewable share)
+
+3. ML ********
+    - ARIMA model for continent renewable energy (if got time, ARIMA for fossil fuel)
+    - auto-regression plot
+
+4. Conclusion
+    - whether we hit 0 fossil fuel by 2050
+    - what countries' policy we can learn from
+        - smoking
+
+
+__Old Research Question__
+
 The United Nations is looking to reduce carbon footprint of countries and minimize their reliance on non-renewable energy sources. In recent times, there has been a surge in usage of non-renewable energy in various countries following the relaxation of quarantine procedures.
 
 The data science department has been tasked to identify countries that have been using non-renewable energy beyond a certain benchmark to fuel their development and determine how to regulate non-renewable energy usage through tariffs and grants to support renewable energy usage.
@@ -7,6 +52,7 @@ The data science department has been tasked to identify countries that have been
 They have collected data on population, GDP, and various types of energy consumption from renewables to non-renewables for different countries. 
 
 Using this data, they want to develop a model that can classify countries into developed and developing countries and then cluster them based on their renewable and non-renewable energy usage patterns. This will allow them to identify which countries are in line with their goals and enact the relevant tariffs/grants accordingly.
+
 
 __Stance of the United Nations__
 
