@@ -9,15 +9,15 @@ __Feedback__
     - Policies that make them do it right
     - Something that UN can implement for other nation
 
-- Shared Socioeconomic Pathway
-    - ARIMA model - forecast for 50 (continent data - explain why we did not use country data)
+- Shared Socioeconomic Pathway (scenarios of projected socioeconomic global changes up to 2100)
+    - ARIMA model - forecast for 2050 (continent data - explain why we did not use country data)
     - ARIMA - time-forecast, SARIMA - seasonal-forecast
     - Most likely to hit or not hit the target?
     - Drop 2020 cause black swan
     - Show auto-regression plot
 
 - What can we do from the lessons learnt above^?
-    - Such as adopt policies from
+    - Such as adopt policies from South America
 
 __New Flow__
 
@@ -41,7 +41,6 @@ __New Flow__
     - whether we hit 0 fossil fuel by 2050
     - what countries' policy we can learn from
         - smoking
-
 
 __Old Research Question__
 
