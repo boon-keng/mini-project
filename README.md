@@ -22,10 +22,10 @@ __Feedback__
 __New Flow__
 
 1. Data Cleaning
-    - Remove columns - don't use specific energy types (coal, gas, nuclear)
+    - Remove absolute values for columns
     - Use continent data for time-series forecasting
         - countries always change (e.g. Venezuela)
-        - use renewable_energy_per_capita / fossiL_energy_per_capita
+    **- Compare correlation using Granger causality test**
 
 2. EDA
     - show renewable enrgy trend across CONTINENTS (can show fossil_cons_change_pct AND greenhouse gas emissions)
@@ -33,14 +33,16 @@ __New Flow__
     - explain that SA is leading the renewable energy
         - trend for south american countries (renewable share)
 
-3. ML ********
-    - ARIMA model for continent renewable energy (if got time, ARIMA for fossil fuel)
-    - auto-regression plot
+3. **ML**
+    - we use renewable energy share as the main variable  - focus on renewables energy usage at end of 2050
+    1. Exponential smoothing
+    2. SARIMA model
 
 4. Conclusion
     - whether we hit 0 fossil fuel by 2050
     - what countries' policy we can learn from
         - smoking
+
 
 __Old Research Question__
 
@@ -51,7 +53,6 @@ The data science department has been tasked to identify countries that have been
 They have collected data on population, GDP, and various types of energy consumption from renewables to non-renewables for different countries. 
 
 Using this data, they want to develop a model that can classify countries into developed and developing countries and then cluster them based on their renewable and non-renewable energy usage patterns. This will allow them to identify which countries are in line with their goals and enact the relevant tariffs/grants accordingly.
-
 
 __Stance of the United Nations__
 
