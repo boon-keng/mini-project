@@ -1,5 +1,14 @@
 # MS0003 Mini Project - World Energy Usage
 
+
+
+__Extra__
+- to determine columns that are related to renewables_share_energy, RandomForest or GradientBoosting to find the most important features
+    - can have more input columns 
+- ARIMA - backtesting on previous dataset, would rather use simplier model
+
+------------------------------------------------------------------------------------------------------------
+
 __Feedback__
 - Animation for choropleth for trend across the year to show what we have done so far
     - For story-telling -> Magnitude of the problem (which countries have more emissions)
@@ -43,6 +52,7 @@ __New Flow__
     - what countries' policy we can learn from
         - smoking
 
+------------------------------------------------------------------------------------------------------------
 
 __Old Research Question__
 
