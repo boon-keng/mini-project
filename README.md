@@ -1,11 +1,18 @@
 # MS0003 Mini Project - World Energy Usage
 
+__Approach__
 
+1. Filter countries based on continents - look at a broad overview rather than specific countries
+2. Filter columns based on: null values, relevancy to renewables_share_energy
+3. Use the columns generated to plot ExponentialSmoothing and ARIMA model.
+4. See if the net zero by 2050 can be achieved
 
 __Extra__
-- to determine columns that are related to renewables_share_energy, RandomForest or GradientBoosting to find the most important features
-    - can have more input columns 
-- ARIMA - backtesting on previous dataset, would rather use simplier model
+- Need to improve column selection using RandomForest or GradientBoosting to find the more important features + include more columns
+- ARIMA - backtesting on previous dataset, would rather use simplier model if it does not result in 
+- make sure data is normalised
+- show linear regression as a baseline
+- can explore risk-reward ratios in stock markets   
 
 ------------------------------------------------------------------------------------------------------------
 
