@@ -1,4 +1,4 @@
-# MS0003 Mini Project - World Energy Usage
+# Mini Project - World Energy Usage
 
 __Problem Statement__
 
